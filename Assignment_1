@@ -1,0 +1,41 @@
+/* Essentially what I am going for to model the bag of marbles is creating an 
+array to represent the bag, which we can pull pieces at random out of. Also 
+I would like to create a class to represent the marble with different methods
+specifically for that marble class in the case that we might add more bags 
+or maybe a bag of dice instead*/
+
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
+class marble { //helps us create an instance of a marble?
+    int value;
+
+    public:
+        grab_marble(int colors[]) { //grabs random marble from the bag
+            value = rand.colors[].pop;
+        }
+
+        add_marble() { //adds marble to bag of specific color stored as a char
+            return value;
+        
+        }
+};
+
+
+int main() {
+
+    char colors[25] //bag only holds 25 marbles
+
+
+}
+
+/* This still does not run and I have tried a couple different things, but 
+unfortunately I think I ran out of time to implement it in a way that it 
+would run. Hopefully you can see from this start that I would begin by
+creating a merble class and then allow a driver dile to add any number of
+different color marbles to a bad and then with the grab_marble method,
+randomly select one from the bag. I am still working on learning to code
+in c++ to get this done. Also, a lot of this foundation comes from code 
+shown in the node class session.*/
