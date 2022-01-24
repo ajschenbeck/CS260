@@ -1,0 +1,26 @@
+# CS260
+
+//Queue data structure:
+  - This structure will start looking something like a line that you can only cut into at the front or at the end.
+  - Within the queue we need a few methods to manipulate whats known as a queue data structure
+      +.pop_front will should pop the front off
+      +.pop_end will pop the end off of the queue
+      +.add_front should add another layer to the front of the data structure. (keep in mind we may not be able to use .add)
+      +.add_end should add a value to the end of the line, kind of like getting in line at subway for a 1am ham sandwich.
+      +.read_value should read the value of the first "in line" of the queue.
+      +.in_one will be paired with .read_value in order to go deeper into the queue to find other values in the queue.
+  - With these in mind we will always want to know what data is first and in the back of the line becuase those should be 
+    our only manipulatable data.
+      
+//Linked list data structure:
+  -This structure looks like a tower, straight up and you can only manipulate the top.
+  -Within this stucture we will need to create some methods to manipulate what will be known as a linked list structure.
+      +.pop only pops the the very top of the linked list off
+      +.add will add some value of data to the top of the stack. (keep in mind we may not be able to use .add)
+      +.read_value will work again here as we need to see what the top of the stack looks like before deciding what we want to do with it.
+      +.x I want to be able to see whats deeper in the stack, but I remember the professor saying you can not do that within a linked list.
+  - At all times, we will want to know what is at the top of our stack. If we have a stack with embedded stacks, which is what I believe we 
+    use almost everyday in what we call "folders" it would be nice to keep track of what "stacks" we have accessed and how to get back.
+
+//Keep in mind I did not take cs133c, but very much wish I did. This being said I do not know what common functions are already used in 
+c++ and how they are already implemented in the structures we are attempting to use.
