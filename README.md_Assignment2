@@ -7,7 +7,7 @@
       +.add_front should add another layer to the front of the data structure. (keep in mind we may not be able to use .add)
       +.add_end should add a value to the end of the line, kind of like getting in line at the subway for a 1am ham sandwich.
       +.read_value should read the value of the first oe the last value in the queue and return it to the user.
-
+ 
 - With these in mind we will always want to know what data is first and in the back of the line because those should be 
     our only manipulatable data.
       
