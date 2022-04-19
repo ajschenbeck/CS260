@@ -1,5 +1,5 @@
 #include <iostream>
-#include "node.h"
+#include "node.h" //may have to go snag "node.h" in repository.
 
 using std::cout;
 using std::endl;
@@ -16,7 +16,7 @@ class Queue {
             back = nullptr; //when the queue is first initiated.
         }
 
-        void enqueue(int new_value) {
+        void enqueue(int new_value) { // takes new_value as a node value and inserts it into the linked queue
             
             if(front == nullptr) {
                 node *new_node = new node{new_value, back};
@@ -29,9 +29,9 @@ class Queue {
                 node *new_node = new node{new_value, nullptr};
                 back->next = new_node;
                 back = new_node;
-            }
+            } // finally was able to get this, my logic was right, just written in the wrong order.
         }
-        void dequeue() {
+        void dequeue() { //removes the first node in the queue from the linked list
             node *front_node = front;
 
             if(front_node == nullptr) { 
@@ -41,7 +41,7 @@ class Queue {
             }
             delete front_node;
         }
-        void peek() {
+        void peek() { //peek at the first node in the list and returns the value.
             node *peek_node = front;
 
             if(peek_node == nullptr) {
@@ -61,14 +61,14 @@ int main(int argc, char **argv) {
     my_queue.enqueue(10);
     my_queue.enqueue(100);
     my_queue.enqueue(1000);
-    my_queue.enqueue(10000); //add 1 to front and push it forward with 2, 3, 4, 5
+    my_queue.enqueue(10000); //add 1 to front and push it forward with 10, 100, 1000, 10000
 
     my_queue.peek(); //peek at front, should be 1
 
     my_queue.dequeue(); //dequeue 1
-    my_queue.dequeue(); //dequeue 2
+    my_queue.dequeue(); //dequeue 10
 
-    my_queue.peek(); //peek at new 3 length queue, should be 3
+    my_queue.peek(); //peek at new 3 length queue, should be 100
 
 
 
